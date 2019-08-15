@@ -11,6 +11,9 @@ io.on('connection',client=>{
         console.log("user disconnect :D");
     })
 })
+express.get('/',(req,res)=>{
+	res.send("success connected")
+})
 
 http.listen(3000,err=>{
     if(err) throw err;
